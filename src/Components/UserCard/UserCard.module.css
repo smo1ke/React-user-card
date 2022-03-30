@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  color: white;
+  width: 500px;
+  min-width: 300px;
+  height: 650px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imgContainer {
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+.imgContainer h1,
+p {
+  color: black;
+  padding: 5px;
+}
+
+.imgContainer p {
+  font-weight: 600;
+  font-size: 16px;
+  color: grey;
+}
+.imgContainer img {
+  display: block;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0.7;
+}
+
+.info {
+  margin: 10% auto;
+  display: flex;
+  justify-content: center;
+}
+.info ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  color: black;
+  border: 2px solid grey;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px black;
+  width: 70%;
+}
+
+.info li {
+  color: gray;
+  font-weight: 600;
+  padding: 5px;
+}
+.info li > p {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.followBtn {
+  border: none;
+  font-weight: bold;
+  background-color: green;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+.defaultColor {
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+.followBtn:hover,
+.defaultColor:hover {
+  opacity: 0.6;
+}
+
+.setLikeBtn {
+  background-color: red;
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 15%;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.deleteLikeBtn {
+  background-color: black;
+  border: none;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 17%;
+  font-size: 18px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.setLikeBtn:hover,
+.deleteLikeBtn:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    height: 450px;
+  }
+  .card h1 {
+    font-size: 24px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+  .info {
+    margin: 5% auto;
+  }
+  .info li {
+    font-size: 14px;
+  }
+  .info li > p {
+    font-size: 20px;
+  }
+}
