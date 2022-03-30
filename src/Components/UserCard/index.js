@@ -16,7 +16,7 @@ export default class UserCard extends Component {
       src: "https://xsport.ua/upload/resize_cache/iblock/89a/916_537_2/89a6d5018a97f75ec2fcc4bd34727217.jpg",
       alt: "Lebron James",
       isFollowed: false,
-      counter: 1999,
+      counter: 8699,
     };
   }
 
@@ -45,7 +45,7 @@ export default class UserCard extends Component {
     const isFollowed = this.state.isFollowed;
 
     let likeBtn = null;
-    if (counter === 1999) {
+    if (counter === 8699) {
       likeBtn = <LikeItBtn onClick={this.likeMade} />;
     } else {
       likeBtn = <DislikeBtn onClick={this.likeUnMade} />;
@@ -53,9 +53,9 @@ export default class UserCard extends Component {
 
     let button = null;
     if (isFollowed) {
-      button = <SetFollowedCBtn onClick={this.unFollowed} />;
+      button = <UnFollowedBtn onClick={this.unFollowed} />;
     } else {
-      button = <UnFollowedBtn onClick={this.followed} />;
+      button = <SetFollowedCBtn onClick={this.followed} />;
     }
 
     return (
@@ -72,11 +72,11 @@ export default class UserCard extends Component {
               <p>995</p>
             </li>
             <li>
-              Following
-              <p>400</p>
+              Followers
+              <p>2.1m</p>
             </li>
             <li>
-              Followers
+              Likes
               <p>{counter}</p>
             </li>
           </ul>
